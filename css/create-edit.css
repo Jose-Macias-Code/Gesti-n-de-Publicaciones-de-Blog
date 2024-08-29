@@ -1,0 +1,264 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+
+/* Header */
+header {
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 40px;
+    position: relative;
+}
+
+.nav-list li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: inline-block;
+    padding-bottom: 2px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.nav-list a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00ADB5;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #00ADB5;
+}
+
+.nav-list a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* Form */
+.main-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.main-form h3 {
+    font-size: 2.5rem;
+    color: #222831;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+}
+
+.form-blog {
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    background: #DBE2EF;
+}
+
+.container-input {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+.container-input label {
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222831;
+}
+
+.container-input input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #DBE2EF;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.container-input input:focus {
+    border-color: #3FC1C9;
+    outline: none;
+}
+
+.container-input input:hover {
+    background: #eaeaea;
+}
+
+.container-bottun {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.container-button button {
+    width: 25%;
+    padding: 12px;
+    margin-right: 15px;
+    background: #00ADB5; 
+    color: #EEEEEE;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container-button button:hover {
+    background: #00767d;
+}
+
+.container-input span {
+    display: none; 
+}
+
+/* Error */
+.container-input input.error {
+    border: 1.5px solid #ec1a03;
+    box-shadow: 0 0 5px rgba(236, 26, 3, 0.5);
+}
+
+.container-input.error span {
+    display: block;
+    color: #ff1900;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+
+/* Footer */
+footer {
+    color: #333;
+    padding: 5px 20px;
+    text-align: center;
+    display: flex;
+    position: relative; 
+    margin-top: 10px; 
+}
+
+footer p {
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+
+/* Responsive */
+@media (max-width: 815px) {
+    header {
+        padding: 10px 30px;
+    }
+
+    .nav-list li {
+        margin-left: 15px;
+    }
+
+    .main-form {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 700px) {
+    header h2 {
+        font-size: 2.3rem;
+    }
+
+    .main-form {
+        max-width: 500px;
+    }
+
+    .main-form h3 {
+        font-size: 2.2rem;
+    }
+
+    .form-blog {
+        padding: 20px;
+    }
+
+    .container-button button {
+        width: 95%;
+        margin-bottom: 15px;
+        display: block;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 2.1rem;
+        margin-bottom: 5px;
+    }
+
+    header li a{
+        font-size: 0.9rem;
+        margin-bottom: 1px;
+    }
+
+    .main-form {
+       max-width: 480px;
+    }
+
+    .main-form h3 {
+        font-size: 2.1rem;
+    }
+
+    .main-input label {
+        font-size: 0.9rem;
+    }
+
+    .main-input .input input {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}

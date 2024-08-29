@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>The Blog Haven</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>The Post Haven</h2>
+        <ul class="nav-list">
+            <li><a href="#" id="filter-link">Filter Posts</a></li>
+            <li><a href="create.html">Create Your Post</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Posts -->
+    <main class="main-post">
+        <section id="container-post"> 
+
+        </section>
+    </main>
+
+    <!-- Filter Popup -->
+    <div id="filter-popup" class="filter-popup">
+        <div class="filter-popup-content">
+            <span class="close-btn" id="close-popup">&times;</span>
+            <h3>Filter Posts</h3>
+            <form id="filter-form">
+                <div class="container-input">
+                    <label for="filter-tags">Tags:</label>
+                    <input type="text" id="filter-tags" placeholder="Enter tags (comma separated)">
+                </div>
+                <button type="button" id="apply-filters">Apply Filters</button>
+                <button type="button" id="reset-filters">Reset Filters</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/3abd9f613f.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/create-edit.css">
+    <title>The Blog Haven</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h2>The Post Haven</h2>
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <!-- Form Post -->
+    <main class="main-form">
+        <h3>Edit The Post</h3>
+        <form id="form-blog" class="form-blog">
+
+            <div class="container-input">
+                <label for="title">Blog Title:</label>
+                <input type="text" id="title">                
+                <span id="error-message"></span>
+            </div>
+
+            <div class="container-input">
+                <label for="autor">Autor:</label>               
+                <input type="text" id="autor">
+                <span id="error-message"></span>
+            </div>
+
+            <div class="container-input">
+                <label for="content">Content:</label>
+                <input type="text" id="content">
+                <span id="error-message"></span>
+            </div>
+
+            <div class="container-input">
+                <label for="tags">Tags:</label>              
+                <input type="text" id="tags">              
+                <span id="error-message"></span>
+            </div>
+
+            <div class="container-button">
+                <button onclick="savePost()" id="edit-post-button">Confirm Edit</button>
+                <button type="button" id="cancel-button">Cancel</button>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; The Post Haven.</p>
+        <p>All rights reserved.</p>
+    </footer>
+
+    <script src="js/edit.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>
