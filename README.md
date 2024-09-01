@@ -27,10 +27,10 @@ Puedes probar la aplicación en vivo a través del siguiente enlace de GitHub Pa
 
 ## 🚀 Uso 
 
-Crear un Post: Llena el formulario de creación y haz clic en "Crear Post". Asegúrate de que todos los campos sean válidos. 🆕
-Editar un Post: Selecciona el post que deseas editar, modifica los campos necesarios y guarda los cambios. ✏️
-Eliminar un Post: Usa el botón de eliminar en cada post para eliminarlo permanentemente.  🗑️
-Filtrar Posts: Usa la ventana emergente de filtros para mostrar posts que coincidan con los tags ingresados. 🔄
+- **Crear un Post:** Llena el formulario de creación y haz clic en "Crear Post". Asegúrate de que todos los campos sean válidos. 🆕
+- **Editar un Post:** Selecciona el post que deseas editar, modifica los campos necesarios y guarda los cambios. ✏️
+- **Eliminar un Post:** Usa el botón de eliminar en cada post para eliminarlo permanentemente. 🗑️
+- **Filtrar Posts:** Usa la ventana emergente de filtros para mostrar posts que coincidan con los tags ingresados. 🔄
 
 ## 📥 Instalación
 
