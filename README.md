@@ -23,7 +23,7 @@ Esta aplicación es un blog dinámico que permite a los usuarios crear, editar, 
 
 Puedes probar la aplicación en vivo a través del siguiente enlace de GitHub Pages:
 
-[**Blog Dinamico en Vivo**](https://jose-macias-code.github.io/Gestion-de-Publicaciones-de-Blog/)
+[**Blog Dinamico en Vivo**](https://jose-macias-code.github.io/Gestistion-de-Publicaciones-de-Blog/)
 
 ## 🚀 Uso 
 
